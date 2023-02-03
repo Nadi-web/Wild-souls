@@ -1,0 +1,430 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+button:hover{
+    animation: bounce 1.2s;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: #ED7B49;
+}
+.first-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: centers;
+    justify-content: centers;
+}
+.header-up{
+    width: 1440 px;
+    min-height: 50 px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-up p{
+    font: normal 16px/24px Roboto;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5px 0 5px 0;
+}
+.screen{
+    width: 100%;
+    height: 780px;
+    background-image: url(./img/screen-back.png);
+    background-size: cover;
+    display: flex;
+    /* flex-wrap: wrap;  */
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left-menu{
+    display: block;
+    width: 415 px;
+    margin: 30px 390px 0 0;
+}
+.right-menu{
+    display: block;
+    width: 415 px;
+    margin: 30px 0 0 0;
+}
+header a{
+    margin-right: 42px;
+    color: black;
+    font: normal 15px/24px Roboto;
+    text-transform: uppercase;
+}
+.logo{
+    max-width: 121px;
+    max-height:161px;
+    margin-bottom: 20px;
+}
+.screen p{
+    font: normal 85px/93px Roboto;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 200px;
+}
+.navigator{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 63, 63, 0.35);
+    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    position: sticky;
+    top: 600px;  
+}
+.second-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden;
+}
+.inf-frame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inf-text{
+    display: flex;
+    flex-direction: column;
+    margin: 110px 0 0 120px;
+}
+.inf-frame img{
+    width: 241px;
+    height: 241px;
+    margin-top: 90px;
+}
+.inf-frame img:hover{
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%
+}
+@keyframes scale {
+    50% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+.thin{
+    font: normal 16px/24px Roboto;
+}
+.bold{
+    font: bold 85px/93px Roboto;
+}
+.background{
+    height: 500px;
+    width: 330px;
+    border-radius: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.background img{
+    margin: 60px 0 -25px 0;
+}
+.mid{
+    font: bold 36px/42px Roboto;
+}
+.background span{
+    font: bold 21px/31px Roboto;
+}
+.product-card-1 .background {
+    background-color: #A95D50;
+}
+.product-card-2 .background {
+    background-color: #FECF6B;
+}
+.product-card-3 .background {
+    background-color: #ABAFD6;
+}
+.product-card-4 .background {
+    background-color: #72A080;
+}
+.product-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+}
+.product-card-1{
+    margin:280px 80px 380px 70px;
+}
+.product-card-2{
+    margin:137px 80px 520px 0;
+}
+.product-card-3{
+    margin:280px 80px 380px 0;
+}
+.product-card-4{
+    margin:137px 0 520px 0;
+}
+.product-container button{
+    width: 182px;
+    height: 47px;
+    border-radius: 36px;
+    border: none;
+    font: normal 18px/27px Roboto; 
+    text-transform: uppercase;  
+    color: #000000;
+}
+.product-card-1 button{
+    background-color: #A95D50;
+}
+.product-card-2 button{
+    background-color:#FECF6B;
+}
+.product-card-3 button{
+    background-color:#ABAFD6;
+}
+.product-card-4 button{
+    background-color:#72A080;
+}
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+sup{
+    font: normal 16px Roboto;
+}
+.dark-container{
+    width: 815px;
+    height: 833px;
+    border-radius: 0 30% 0 0;
+    background-color: #BE5A4B;
+    padding: 94px 15px 74px 100px;
+    margin-right: 170px;
+}
+.nut-inf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.description .thin{
+    margin: 14px 47px 20px 0;
+}
+.price{
+    font: bold 21/32 Roboto;
+}
+.mid-3{
+    font: normal 21px/32px Roboto;
+}
+.line{
+    width: 255px;
+    background-color: black;
+    height: 1.5px;
+    border: none;
+}
+.fourth-block{
+    display: flex;
+    align-items: center;
+}
+
+.ingr-list{
+    margin-top: 92px;
+}
+.ingr-list p{
+    margin-top: 42px;
+}
+.mid-2{
+    font: bold 42px/50px Roboto;
+}
+.price{
+    font: normal 21px/32px Roboto;
+}
+.usual{
+    width: 297px;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+    font: normal 14px/30px Roboto; 
+    text-transform: uppercase;
+    background-color: #000000;
+    margin-top: 46px;
+    color: #FFFFFF;
+}
+.visual-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+.rock-hand{
+    z-index: 1;
+    margin-bottom: -75px;
+    position: relative;
+    padding-left: 250px;
+}
+.nut{
+    position: relative;
+    z-index: 2;
+}
+.fifth-block{
+    width: 100%;
+    height: 575px;
+    background-color: #EA8D7F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fifth-block .mid-3{
+    margin: 0 62px 190px 62px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.fifth-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fifth-wrap p{
+    font: normal 16px/24px Roboto;
+    text-align: center;
+}
+.fifth-block span{
+    font: bold 18px/27px Roboto;
+    text-transform: uppercase;
+    margin: 25px 0 15px 0;
+}
+.second-part{
+    background-color: #EC4844;
+    width: 100%;
+    height: fit-content;
+}
+.sixth-block{
+    display: flex;
+    align-items: flex-start;
+}
+.blue-wrap{
+    width: 815px;
+    height: 681px;
+    background: #ABAFD6;
+    border-radius: 0px 220px 0px 0px;
+    margin: 250px 15px 250px 0;
+}
+.blue-wrap .bold{
+    margin: 90px 0 50px 165px;
+}
+.halva{
+    margin-left: 165px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.blue-wrap .thin{
+    margin: 62px 0 21px 0;
+}
+.blue-wrap .mid-2{
+    width: 332px;
+}
+.orange-wrap{
+    width: 445px;
+    height: 681px;
+    background: #ED7B49;
+    border-radius: 220px 0px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.orange-wrap .mid-2{
+    margin: 39px 0 30px 0;
+}
+.b-50{
+    width: 270px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #000000;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #EA8D7F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 135px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 115px 0 65px 0;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 65px;
+}
+.links .bold{
+    margin-right: 160px;
+}
+.footer-link{
+    font: normal 16px/24px Roboto;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 21px;
+}
+.n-32{
+    font: bold 32px/38px Roboto;
+    margin-bottom: 21px;
+}
+.imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 85%;
+}
+@media screen and (max-width:1200px){
+
+}
